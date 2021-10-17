@@ -26,7 +26,7 @@ const checkWin=()=>{
 
         if((boxtexts[e[0]].innerText===boxtexts[e[1]].innerText)&&(boxtexts[e[2]].innerText===boxtexts[e[1]].innerText)&&(boxtexts[e[0]].innerText!=="")){
         document.querySelector(".info").innerText=boxtexts[e[0]].innerText+" Won"
-        gameover=true;
+        gameover=false;
         document.querySelector(".imgBox").getElementsByTagName("img")[0].style.width="400px";
         document.querySelector(".line").style.width="30vw";
         document.querySelector(".line").style.transform=`translate(${e[3]}vw,${e[4]}vw) rotate(${e[5]}deg)`
